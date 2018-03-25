@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_columnWeight="3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.d3ifcool.matepets.CategorySearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <Spinner
+        android:id="@+id/typePets_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:entries="@array/type_pets">
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/rasPets_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:entries="@array/race_pets">
+    </Spinner>
+    <Spinner
+        android:id="@+id/genderPets_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:entries="@array/gender_pets">
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/localtionPets_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/location">
+    </Spinner>
+
+    <Button
+        android:id="@+id/btn_input_pets"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:textColor="@android:color/white"
+        android:text="@string/btn_search_category"
+        android:background="@drawable/buttonshape"
+        android:layout_gravity="center"
+        android:layout_marginLeft="130dp"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ivHome"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_home_black_24dp"
+            tools:ignore="OnClick" />
+
+        <ImageButton
+            android:id="@+id/ivSearh"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_place_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/ivCategory"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_view_list_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/ivInfo"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_library_books_black_24dp"/>
+        <ImageButton
+            android:id="@+id/ivProfile"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_account_circle_black_24dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
